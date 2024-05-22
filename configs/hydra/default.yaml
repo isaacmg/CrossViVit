@@ -7,7 +7,7 @@ defaults:
 
 # output directory, generated dynamically on each run
 run:
-  dir: ${paths.log_dir}/${task_name}/runs/${oc.env:SLURM_JOB_ID}
+  dir: /Users/isaac/Documents/GitHub/CrossViVit/example
 sweep:
-  dir: ${paths.log_dir}/${task_name}/multiruns/${oc.env:SLURM_JOB_ID}
+  dir: /Users/isaac/Documents/GitHub/CrossViVit/example
   subdir: ${hydra.job.num}

@@ -1,5 +1,5 @@
 import pyrootutils
-
+import os
 root = pyrootutils.setup_root(
     search_from=__file__,
     indicator=[".git", "pyproject.toml"],
@@ -113,4 +113,5 @@ def main(cfg: DictConfig) -> Optional[float]:
 
 
 if __name__ == "__main__":
+    os.environ["WANDB_CONFIG_DIR"] = "/Users/isaac/Documents/GitHub/wandb"
     main()

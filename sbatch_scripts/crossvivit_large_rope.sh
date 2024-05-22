@@ -7,8 +7,8 @@
 #SBATCH --time=48:00:00
 #SBATCH -o use_your_path
 
-module --quiet load anaconda/3
-conda activate ocf
+#module --quiet load anaconda/3
+#conda activate ocf
 
 python main.py \
 experiment=cross_vivit \
